@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="3" ignored="0" total="8" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="1010359" started-at="2020-03-29T20:05:14 IST" finished-at="2020-03-29T20:22:05 IST">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="1010359" started-at="2020-03-29T20:05:14 IST" finished-at="2020-03-29T20:22:05 IST">
+      <class name="ownProject.AppiumProject.EcommerceLogin">
+        <test-method status="PASS" signature="killExistingProcess()[pri:0, instance:ownProject.AppiumProject.EcommerceLogin@7a3d45bd]" name="killExistingProcess" is-config="true" duration-ms="5033" started-at="2020-03-29T20:05:15 IST" finished-at="2020-03-29T20:05:20 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killExistingProcess -->
+        <test-method status="PASS" signature="testLogin(java.lang.String)[pri:0, instance:ownProject.AppiumProject.EcommerceLogin@7a3d45bd]" name="testLogin" duration-ms="134095" started-at="2020-03-29T20:05:20 IST" data-provider="InputData" finished-at="2020-03-29T20:07:34 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Hema]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method status="PASS" signature="killExistingProcess()[pri:0, instance:ownProject.AppiumProject.EcommerceLogin@7a3d45bd]" name="killExistingProcess" is-config="true" duration-ms="5136" started-at="2020-03-29T20:07:34 IST" finished-at="2020-03-29T20:07:39 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killExistingProcess -->
+        <test-method status="FAIL" signature="testLogin(java.lang.String)[pri:0, instance:ownProject.AppiumProject.EcommerceLogin@7a3d45bd]" name="testLogin" duration-ms="135651" started-at="2020-03-29T20:07:39 IST" data-provider="InputData" finished-at="2020-03-29T20:09:55 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Latha]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[Cached elements 'By.id: com.androidsample.generalstore:id/productPrice' do not exist in DOM anymore
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'WINDOWS-A8A1UNJ', ip: '127.0.0.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: C:\Users\dell\eclipse-works..., appPackage: com.androidsample.generalstore, automationName: uiautomator2, databaseEnabled: false, desired: {app: C:\Users\dell\eclipse-works..., automationName: uiautomator2, deviceName: emu, platformName: android}, deviceApiLevel: 28, deviceManufacturer: Google, deviceModel: AOSP on IA Emulator, deviceName: emulator-5554, deviceScreenDensity: 420, deviceScreenSize: 1080x1920, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 9, statBarHeight: 63, takesScreenshot: true, viewportRect: {height: 1731, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 711ef556-18b7-4d99-bb38-87e53c5d6112]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: Cached elements 'By.id: com.androidsample.generalstore:id/productPrice' do not exist in DOM anymore
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'WINDOWS-A8A1UNJ', ip: '127.0.0.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: C:\Users\dell\eclipse-works..., appPackage: com.androidsample.generalstore, automationName: uiautomator2, databaseEnabled: false, desired: {app: C:\Users\dell\eclipse-works..., automationName: uiautomator2, deviceName: emu, platformName: android}, deviceApiLevel: 28, deviceManufacturer: Google, deviceModel: AOSP on IA Emulator, deviceName: emulator-5554, deviceScreenDensity: 420, deviceScreenSize: 1080x1920, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 9, statBarHeight: 63, takesScreenshot: true, viewportRect: {height: 1731, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 711ef556-18b7-4d99-bb38-87e53c5d6112
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at io.appium.java_client.DefaultGenericMobileElement.execute(DefaultGenericMobileElement.java:45)
+at io.appium.java_client.MobileElement.execute(MobileElement.java:1)
+at io.appium.java_client.android.AndroidElement.execute(AndroidElement.java:1)
+at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:166)
+at pageObjects.CartPage.calculateTotalPrice(CartPage.java:45)
+at ownProject.AppiumProject.EcommerceLogin.testLogin(EcommerceLogin.java:42)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method status="PASS" signature="killExistingProcess()[pri:0, instance:ownProject.AppiumProject.EcommerceLogin@7a3d45bd]" name="killExistingProcess" is-config="true" duration-ms="5044" started-at="2020-03-29T20:09:57 IST" finished-at="2020-03-29T20:10:02 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killExistingProcess -->
+        <test-method status="PASS" signature="testLogin(java.lang.String)[pri:0, instance:ownProject.AppiumProject.EcommerceLogin@7a3d45bd]" name="testLogin" duration-ms="148957" started-at="2020-03-29T20:10:02 IST" data-provider="InputData" finished-at="2020-03-29T20:12:31 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Udattu]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method status="PASS" signature="killExistingProcess()[pri:0, instance:ownProject.AppiumProject.EcommerceLogin@7a3d45bd]" name="killExistingProcess" is-config="true" duration-ms="5147" started-at="2020-03-29T20:12:31 IST" finished-at="2020-03-29T20:12:36 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killExistingProcess -->
+        <test-method status="PASS" signature="testLogin(java.lang.String)[pri:0, instance:ownProject.AppiumProject.EcommerceLogin@7a3d45bd]" name="testLogin" duration-ms="163561" started-at="2020-03-29T20:12:36 IST" data-provider="InputData" finished-at="2020-03-29T20:15:19 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[247676.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method status="PASS" signature="killExistingProcess()[pri:0, instance:ownProject.AppiumProject.EcommerceLogin@7a3d45bd]" name="killExistingProcess" is-config="true" duration-ms="5095" started-at="2020-03-29T20:15:19 IST" finished-at="2020-03-29T20:15:25 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killExistingProcess -->
+        <test-method status="PASS" signature="testLogin(java.lang.String)[pri:0, instance:ownProject.AppiumProject.EcommerceLogin@7a3d45bd]" name="testLogin" duration-ms="149970" started-at="2020-03-29T20:15:25 IST" data-provider="InputData" finished-at="2020-03-29T20:17:55 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[$%$GGFGjdh]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method status="PASS" signature="killExistingProcess()[pri:0, instance:ownProject.AppiumProject.EcommerceLogin@7a3d45bd]" name="killExistingProcess" is-config="true" duration-ms="5231" started-at="2020-03-29T20:17:55 IST" finished-at="2020-03-29T20:18:00 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killExistingProcess -->
+        <test-method status="FAIL" signature="testLogin(java.lang.String)[pri:0, instance:ownProject.AppiumProject.EcommerceLogin@7a3d45bd]" name="testLogin" duration-ms="76821" started-at="2020-03-29T20:18:00 IST" data-provider="InputData" finished-at="2020-03-29T20:19:17 IST">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[Keys to send should be a not null CharSequence]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:97)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at io.appium.java_client.pagefactory.ElementInterceptor.getObject(ElementInterceptor.java:40)
+at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:60)
+at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.sendKeys(<generated>)
+at pageObjects.LoginPage.enterName(LoginPage.java:45)
+at ownProject.AppiumProject.EcommerceLogin.testLogin(EcommerceLogin.java:28)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method status="PASS" signature="killExistingProcess()[pri:0, instance:ownProject.AppiumProject.EcommerceLogin@7a3d45bd]" name="killExistingProcess" is-config="true" duration-ms="5024" started-at="2020-03-29T20:19:19 IST" finished-at="2020-03-29T20:19:24 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killExistingProcess -->
+        <test-method status="FAIL" signature="testLogin(java.lang.String)[pri:0, instance:ownProject.AppiumProject.EcommerceLogin@7a3d45bd]" name="testLogin" duration-ms="73979" started-at="2020-03-29T20:19:24 IST" data-provider="InputData" finished-at="2020-03-29T20:20:38 IST">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[Keys to send should be a not null CharSequence]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:97)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at io.appium.java_client.pagefactory.ElementInterceptor.getObject(ElementInterceptor.java:40)
+at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:60)
+at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.sendKeys(<generated>)
+at pageObjects.LoginPage.enterName(LoginPage.java:45)
+at ownProject.AppiumProject.EcommerceLogin.testLogin(EcommerceLogin.java:28)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method status="PASS" signature="killExistingProcess()[pri:0, instance:ownProject.AppiumProject.EcommerceLogin@7a3d45bd]" name="killExistingProcess" is-config="true" duration-ms="5021" started-at="2020-03-29T20:20:41 IST" finished-at="2020-03-29T20:20:46 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killExistingProcess -->
+        <test-method status="PASS" signature="testLoginError()[pri:0, instance:ownProject.AppiumProject.EcommerceLogin@7a3d45bd]" name="testLoginError" duration-ms="78725" started-at="2020-03-29T20:20:46 IST" finished-at="2020-03-29T20:22:04 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginError -->
+      </class> <!-- ownProject.AppiumProject.EcommerceLogin -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

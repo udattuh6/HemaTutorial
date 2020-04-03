@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="ownProject.AppiumProject.EcommerceLogin">
+        <methods>
+          <include name="killExistingProcess"/>
+          <include name="testLogin"/>
+        </methods>
+      </class> <!-- ownProject.AppiumProject.EcommerceLogin -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
